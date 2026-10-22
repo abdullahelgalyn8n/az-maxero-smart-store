@@ -1,0 +1,6 @@
+{
+  "name": "MAXERO — Smart Solutions & Exclusive Membership Store",
+  "description": "MAXERO for Entrepreneurship & Trading: Smartphones, iPhones, laptops, electronics, and travel packages with exclusive member discounts and 50% cashback programs.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

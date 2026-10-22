@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+@layer base {
+  :root,
+  [data-theme="light"] {
+    --bg-primary: #F8F9FA;
+    --bg-secondary: #EFECE6;
+    --bg-surface: #FFFFFF;
+    --bg-surface-elevated: #F1F5F9;
+    --bg-glass: rgba(255, 255, 255, 0.92);
+    --text-primary: #0F172A;
+    --text-secondary: #334155;
+    --text-muted: #475569;
+    --border-subtle: #CBD5E1;
+    --border-strong: #94A3B8;
+    --gold-primary: #8A5A00;
+    --gold-bright: #B47800;
+    --gold-surface: #FEF3C7;
+    --gold-border: #D97706;
+    --gold-btn-bg: #9A6700;
+    --gold-btn-hover: #7C5200;
+    --gold-btn-text: #FFFFFF;
+    --accent-teal: #0F766E;
+    --accent-teal-bg: #CCFBF1;
+    --shadow-card: 0 4px 20px -2px rgba(15, 23, 42, 0.08), 0 1px 3px 0 rgba(15, 23, 42, 0.06);
+  }
+
+  [data-theme="dark"] {
+    --bg-primary: #0B0C10;
+    --bg-secondary: #101218;
+    --bg-surface: #151821;
+    --bg-surface-elevated: #1C202B;
+    --bg-glass: rgba(18, 20, 28, 0.90);
+    --text-primary: #F8FAFC;
+    --text-secondary: #CBD5E1;
+    --text-muted: #94A3B8;
+    --border-subtle: #262B38;
+    --border-strong: #3B4254;
+    --gold-primary: #D4AF37;
+    --gold-bright: #E5C158;
+    --gold-surface: rgba(212, 175, 55, 0.14);
+    --gold-border: rgba(212, 175, 55, 0.40);
+    --gold-btn-bg: #C59B27;
+    --gold-btn-hover: #D4AF37;
+    --gold-btn-text: #0B0C10;
+    --accent-teal: #2DD4BF;
+    --accent-teal-bg: rgba(45, 212, 191, 0.14);
+    --shadow-card: 0 10px 30px -5px rgba(0, 0, 0, 0.5);
+  }
+
+  body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: 'Plus Jakarta Sans', 'Cairo', sans-serif;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+
+  [dir="rtl"] body {
+    font-family: 'Cairo', 'Plus Jakarta Sans', sans-serif;
+  }
+}
+
+.font-display {
+  font-family: 'Outfit', 'Cairo', sans-serif;
+}
+
+.font-mono-num {
+  font-family: 'JetBrains Mono', monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
